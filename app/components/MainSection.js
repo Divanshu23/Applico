@@ -3,6 +3,7 @@ import TodoItem from './TodoItem';
 import Footer from './Footer';
 import { SHOW_ALL, SHOW_COMPLETED, SHOW_ACTIVE } from '../constants/TodoFilters';
 import style from './MainSection.css';
+// import { authorize, listLabels} from '../apis/gmailAPI.js'
 
 
 const TODO_FILTERS = {
@@ -81,7 +82,10 @@ export default class MainSection extends Component {
     );
   }
   */
-  
+ handleFetchEmails = () => {
+  console.log("fetching emails");
+
+};
 
   render() {
     /**
@@ -99,20 +103,10 @@ export default class MainSection extends Component {
 
       <div>
         This is the main section!
+        <button onClick={this.handleUserEmail}>Refresh</button>
       </div>
 
-      /**
-      <section className={style.main}>
-        {this.renderToggleAll(completedCount)}
-        <ul className={style.todoList}>
-          {filteredTodos.map(todo =>
-            <TodoItem key={todo.id} todo={todo} {...actions} />
-          )}
-        </ul>
-        {this.renderEmail()}
-        {this.renderFooter(completedCount)}
-      </section>
-      */
+      
     );
   }
 }

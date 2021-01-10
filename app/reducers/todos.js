@@ -8,13 +8,6 @@ const initialState = [{
 
 const actionsMap = {
 
-
-
-
-
-
-
-
   [ActionTypes.ADD_TODO](state, action) {
     return [{
       id: state.reduce((maxId, todo) => Math.max(todo.id, maxId), -1) + 1,
