@@ -1,0 +1,20 @@
+{ 
+    "name": "Applico", 
+    "version": "0.0.1", 
+    "manifest_version": 2,
+    "description": "Manipulate the DOM when the page is done loading", 
+    "background": "background.html", 
+    "browser_action": { 
+        "name": "Applico", 
+        "icons": ["icon.png"], 
+        "default_icon": "icon.png",
+        "default_popup": "popup.html"
+    }, 
+    "content_scripts": [ 
+        { 
+            "js": ["jquery.js","content.js", "gapi.js" ],
+             "matches": [ "http://*/*", "https://*/*"]
+         }
+     ],
+     "content_security_policy": "script-src 'self' 'unsafe-inline'; object-src 'self'" 
+}   
