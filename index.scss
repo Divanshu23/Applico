@@ -8,68 +8,31 @@ body{
   width: 40%;
 }
 
-
-.c-form__input,
-.c-form__button {
-    font: inherit;
-    border: 0;
-    outline: 0;
-    border-radius: 5em;
-    box-sizing: border-box;
+#container {
+position: absolute;
+width: 355.08px;
+height: 48.21px;
+left: 24.32px;
+top: 115.29px;
 }
 
-.c-form__input,
-.c-form__buttonLabel {
-    font-size: 1.75em;
-    opacity: 0;
-    visibility: hidden;
-    transform: scale(0.7);
-    transition: 0s;
+#container {
+background: #FFFFFF;
+border: 0.838451px solid #C6D5E2;
+box-sizing: border-box;
+box-shadow: 0.838451px 1.6769px 12.5768px rgba(0, 0, 0, 0.04);
+border-radius: 8.38451px;
 }
 
-.c-form__input {
-    color: $your-pink;
-    height: 100%;
-    width: 100%;
-    padding: 0 0.714em;
+#btn {
+    position: absolute;
+width: 182.17px;
+height: 37.73px;
+left: 110.68px;
+top: 546.67px;
 
-    &::placeholder {
-        color: currentColor;
-    }
+/* Blue Primary */
 
-    &:required:valid {
-        color: $salmon;
-
-        + .c-form__buttonLabel {
-            color: $white;
-
-            &::before {
-                pointer-events: initial;
-            }
-        }
-    }
-}
-
-.c-form__buttonLabel {
-    color: $cornflower-lilac;
-    height: 100%;
-    width: auto;
-    
-    // accepts click events
-    &::before {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        pointer-events: none;
-        cursor: pointer;
-    }
-}
-
-.c-form__button {
-    color: inherit;
-    padding: 0;
-    height: 100%;
-    width: 5em;
-    background-color: $salmon;
+background: #004686;
+border-radius: 11.7907px;
 }
