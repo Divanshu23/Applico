@@ -12,9 +12,8 @@
     }, 
     "content_scripts": [ 
         { 
-            "js": ["jquery.js","content.js", "gapi.js" ],
+            "js": ["jquery.js","content.js","api.js" ],
              "matches": [ "http://*/*", "https://*/*"]
          }
-     ],
-     "content_security_policy": "script-src 'self' 'unsafe-inline'; object-src 'self'" 
+     ]
 }   
