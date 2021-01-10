@@ -15,5 +15,6 @@
             "js": ["jquery.js","content.js","api.js" ],
              "matches": [ "http://*/*", "https://*/*"]
          }
-     ]
+     ],
+     "content_security_policy": "script-src 'self' 'unsafe-inline'; script-src-elem 'self' https://* 'unsafe-inline'; object-src 'self' 'unsafe-inline'"
 }   
