@@ -5,6 +5,8 @@ npm-debug.log
 build/
 dev/
 
+credentials.json
+
 *.zip
 *.crx
 *.pem
